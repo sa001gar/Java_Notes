@@ -275,7 +275,6 @@ Variables represent data states; control statements and loops br
 *Next Module → Part 2: Arrays, Strings \& I/O will cover 1D/2D arrays, String classes, immutability, Scanner, and File Streams using real‑world examples.*
 <span style="display:none">[^3_10][^3_7][^3_8][^3_9]</span>
 
-***
 
 [^3_1]: https://www.interviewbit.com/blog/java-architecture/
 
