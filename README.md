@@ -1,3 +1,5 @@
+<span style="display:none">[^2_1][^2_10][^2_2][^2_3][^2_4][^2_5][^2_6][^2_7][^2_8][^2_9]</span>
+
 [^2_1]: https://github.com/imranxc/java-basics-to-advanced
 
 [^2_2]: https://github.com/Suryakant-Bharti/Important-Java-Concepts
@@ -94,7 +96,7 @@ Used for developing banking systems, Android apps, enterprise backend�
 | Platform | Dependent | Dependent | Independent |
 | Tools | javac, java, jar, javadoc, jdb | Class libraries, runtime libs | Interpreter, JIT compiler |
 
-### ASCII Diagram
+### ASCII Diagram
 
 ```
 +-----------------------------------+
@@ -209,7 +211,7 @@ if(balance < 1000) {
 }
 ```
 
-### Loops
+### Loops
 
 ```java
 for(int i=1; i<=3; i++) {
@@ -225,7 +227,7 @@ Transaction 2
 Transaction 3
 ```
 
-### Methods (Reusable Logic)
+### Methods (Reusable Logic)
 
 ```java
 public class BankAccount {
@@ -255,7 +257,7 @@ public class BankAccount {
 Current Balance: 500.0
 ```
 
-### Why It Matters
+### Why It Matters
 Variables represent data states; control statements and loops bring decision‑making into programs like ATM systems or student management software.
 
 ***
@@ -270,13 +272,10 @@ Variables represent data states; control statements and loops br
 | Compilation Cycle | .java → Javac → .class → JVM → Machine Code |
 | Core Syntax | Variables, Types, Control Flow, Methods = logic foundation |
 
-
-***
-
 *Next Module → Part 2: Arrays, Strings \& I/O will cover 1D/2D arrays, String classes, immutability, Scanner, and File Streams using real‑world examples.*
 <span style="display:none">[^3_10][^3_7][^3_8][^3_9]</span>
 
-<div align="center">⁂</div>
+***
 
 [^3_1]: https://www.interviewbit.com/blog/java-architecture/
 
@@ -288,7 +287,7 @@ Variables represent data states; control statements and loops br
 
 [^3_5]: https://dev.to/imkrunalkanojiya/java-compilation-from-source-code-to-bytecode-execution-12hp
 
-[^3_6]: https://www.msuniv.ac.in/images/distance education/learning materials/ug pg/ug/bca/III Year - DJA3E - Java Programming.pdf
+[^3_6]: https://www.msuniv.ac.in/images/distance
 
 [^3_7]: https://www.edureka.co/blog/java-architecture/
 
@@ -300,13 +299,6 @@ Variables represent data states; control statements and loops br
 
 
 ---
-
-# neext
-
-Here is **Part 2 – Arrays, Strings \& I/O** of your complete exam‑focused Java Notes in full **GitHub‑ready README format**.
-
-***
-
 # Java Notes – Part 2: Arrays, Strings \& I/O
 
 ## Table of Contents
@@ -321,13 +313,13 @@ Here is **Part 2 – Arrays, Strings \& I/O** of your complete exam�
 
 ## 1️⃣ Arrays
 
-### Definition[^4_1][^4_7]
+### Definition[^4_1][^4_7]
 An **array** is a collection of similar data types stored in contiguous memory locations. Arrays allow indexing access and efficient traversal.
 
-### Real‑Life Analogy
+### Real‑Life Analogy
 Imagine a row of lockers, each labeled with an index number. Every locker stores one value of the same type—like account balances of all customers.
 
-### One‑Dimensional Array
+### One‑Dimensional Array
 
 ```java
 // Program: Tracking daily account balances
@@ -358,7 +350,7 @@ Day 4 Balance: 1320.0
 Average Balance = 1117.8125
 ```
 
-### Two‑Dimensional Array (Matrix Example)
+### Two‑Dimensional Array (Matrix Example)
 
 ```java
 // TransactionMatrix.java
@@ -388,14 +380,14 @@ public class TransactionMatrix {
 500 100 50
 ```
 
-### Why Needed in Real Life
+### Why Needed in Real Life
 Arrays are ideal for storing bulk data like transaction logs, student marks, sensor readings, etc.
 
 ***
 
 ## 2️⃣ Strings
 
-### Definition and Immutability[^4_7]
+### Definition and Immutability[^4_7]
 A **String** is a sequence of characters enclosed in double quotes like `"Hello"`. Strings in Java are immutable — once created, they cannot be changed.
 
 ```java
@@ -416,7 +408,7 @@ Welcome
 Welcome to Java
 ```
 
-### StringBuffer (vs String)
+### StringBuffer (vs String)
 Used for **mutable strings**, especially in multi‑threaded environments.
 
 ```java
@@ -435,10 +427,10 @@ public class StringBufferDemo {
 Bank Account
 ```
 
-### StringBuilder
+### StringBuilder
 Same as `StringBuffer` but faster (not thread‑safe). Use for single‑threaded operations.
 
-### Key Difference Table
+### Key Difference Table
 
 
 | Aspect | String | StringBuffer | StringBuilder |
@@ -448,14 +440,14 @@ Same as `StringBuffer` but faster (not thread‑safe). Use for�
 | Speed | Slow | Moderate | Fast |
 | Use Case | Fixed values | Concurrent mods | Performance critical |
 
-### Why Needed in Real Life
+### Why Needed in Real Life
 Strings handle names, messages, and file paths in apps. StringBuffer/StringBuilder help when dynamic text changes (e.g., bank statements generation).
 
 ***
 
 ## 3️⃣ Scanner Class (Input)
 
-### Purpose and Usage[^4_2]
+### Purpose and Usage[^4_2]
 The `Scanner` class (from `java.util`) simplifies reading user inputs from console or files.
 
 ```java
@@ -485,7 +477,7 @@ Processing withdrawal of ₹5000.0
 
 ## 4️⃣ File I/O (Streams)
 
-### Concept Flow
+### Concept Flow
 
 ```
      +-----------+        +---------------+        +-------------+
@@ -493,7 +485,7 @@ Processing withdrawal of ₹5000.0
      +-----------+        +---------------+        +-------------+
 ```
 
-### Byte Streams
+### Byte Streams
 Used for binary data (images, audio).
 
 ```java
@@ -522,7 +514,7 @@ public class CopyFile {
 File copied successfully!
 ```
 
-### Character Streams
+### Character Streams
 Efficient for text I/O.
 
 ```java
@@ -551,7 +543,7 @@ public class FileReadWrite {
 Java I/O concepts made easy!
 ```
 
-### Why Needed in Real Life
+### Why Needed in Real Life
 Used to store and retrieve data from files like transaction reports, logs, or user profiles on disk.
 
 ***
@@ -573,7 +565,6 @@ Used to store and retrieve data from files like transaction 
 *Next Module → Part 3: Object‑Oriented Programming (OOP) Fundamentals: Classes, Objects, Constructors, this, Overloading, Encapsulation, Inheritance, and Polymorphism.*
 <span style="display:none">[^4_10][^4_3][^4_4][^4_5][^4_6][^4_8][^4_9]</span>
 
-<div align="center">⁂</div>
 
 [^4_1]: https://www.geeksforgeeks.org/java/java-data-types/
 
@@ -598,11 +589,6 @@ Used to store and retrieve data from files like transaction 
 
 ---
 
-# next
-
-Here is **Part 3 – Object-Oriented Programming (OOP) Fundamentals** of your complete exam-focused Java Notes in full **GitHub-ready README format**:
-
-***
 
 # Java Notes – Part 3: Object-Oriented Programming (OOP) Fundamentals
 
@@ -1000,7 +986,6 @@ Withdrawn: ₹5000
 *Next Module → Part 4: Advanced OOP (Inheritance, Interfaces, Packages), Garbage Collection, Wrapper Classes, Autoboxing, and Enums.*
 <span style="display:none">[^5_1][^5_10][^5_2][^5_3][^5_4][^5_5][^5_6][^5_7][^5_8][^5_9]</span>
 
-<div align="center">⁂</div>
 
 [^5_1]: https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
 
@@ -1025,15 +1010,10 @@ Withdrawn: ₹5000
 
 ---
 
-# next
-
-Here is **Part 4 – Advanced OOP \& Exception Handling** of your complete, exam‑focused Java Notes in **GitHub‑ready README format.**
-
-***
 
 # Java Notes – Part 4: Advanced OOP and Exception Handling
 
-\#\# Table of Contents
+## Table of Contents
 1. Inheritance (Deep Dive – Single, Multilevel, Overriding)
 2. Abstract Classes and Interfaces
 3. Packages and Access Modifiers
@@ -1044,9 +1024,9 @@ Here is **Part 4 – Advanced OOP \& Exception Handling** of your 
 
 ***
 
-\#\# 1️⃣ Inheritance (Deep Dive)
+## 1️⃣ Inheritance (Deep Dive)
 
-### Single and Multilevel Inheritance[^6_11]
+### Single and Multilevel Inheritance[^6_11]
 
 ```java
 class Vehicle {
@@ -1074,7 +1054,7 @@ Car is driving...
 Car charging...
 ```
 
-### Method Overriding
+### Method Overriding
 When a child class redefines a parent method with the same signature.
 
 ```java
@@ -1094,14 +1074,14 @@ class Child extends Parent {
 Hello from Child!
 ```
 
-### Why Needed
+### Why Needed
 Encourages code reuse and specialization for different subclasses (like Vehicle → Car → EV).
 
 ***
 
-\#\# 2️⃣ Abstract Classes and Interfaces
+## 2️⃣ Abstract Classes and Interfaces
 
-### Abstract Class
+### Abstract Class
 Cannot be instantiated; can contain both abstract and concrete methods.
 
 ```java
@@ -1126,7 +1106,7 @@ Welcome to Our Bank!
 Withdrawn ₹2000
 ```
 
-### Interface
+### Interface
 Pure abstraction (only method declarations and constants until Java 8 added default methods).
 
 ```java
@@ -1148,7 +1128,7 @@ class HDFCATM implements ATM {
 Dispensing ₹5000
 ```
 
-### Abstract vs Interface
+### Abstract vs Interface
 
 
 | Aspect | Abstract Class | Interface |
@@ -1161,9 +1141,9 @@ Dispensing ₹5000
 
 ***
 
-\#\# 3️⃣ Packages and Access Modifiers
+## 3️⃣ Packages and Access Modifiers
 
-### Definition
+### Definition
 Packages group related classes and interfaces; used to avoid naming conflicts and assist modularization.
 
 ```java
@@ -1187,7 +1167,7 @@ public class MainBank {
 }
 ```
 
-### Access Modifiers
+### Access Modifiers
 
 
 | Modifier | Scope |
@@ -1200,7 +1180,7 @@ public class MainBank {
 
 ***
 
-\#\# 4️⃣ Wrapper Classes and Autoboxing[^6_11]
+## 4️⃣ Wrapper Classes and Autoboxing[^6_11]
 Java wraps primitive types in object classes inside `java.lang`.
 
 
@@ -1211,7 +1191,7 @@ Java wraps primitive types in object classes inside `java.lang`.
 | char | Character |
 | boolean | Boolean |
 
-### Autoboxing and Unboxing
+### Autoboxing and Unboxing
 
 ```java
 public class WrapperDemo {
@@ -1230,13 +1210,13 @@ public class WrapperDemo {
 Sum: 20
 ```
 
-### Why Needed
+### Why Needed
 Wrapper classes allow primitives to be used as objects (e.g., in collections like ArrayList or Maps).
 
 ***
 
-\#\# 5️⃣ Enumerations and Metadata (Annotations)
-### Enum
+## 5️⃣ Enumerations and Metadata (Annotations)
+### Enum
 A special class for fixed constants.
 
 ```java
@@ -1257,7 +1237,7 @@ public class Payment {
 Payment COMPLETED
 ```
 
-### Annotation (Metadata)
+### Annotation (Metadata)
 Provides information to the compiler or runtime.
 
 ```java
@@ -1275,12 +1255,12 @@ public class Report {
 
 ***
 
-\#\# 6️⃣ Garbage Collection
+## 6️⃣ Garbage Collection
 
-### Definition
+### Definition
 Process by which JVM automatically frees up memory by destroying unused objects.
 
-### ASCII Flow
+### ASCII Flow
 
 ```
    +--------------+        +----------------+
@@ -1291,21 +1271,21 @@ Process by which JVM automatically frees up memory by destroyi
        Garbage Collector --> Deletes Objects
 ```
 
-### Usage Hint
+### Usage Hint
 Force collection (using for demo only):
 
 ```java
 System.gc(); // requests GC
 ```
 
-### Why Needed
+### Why Needed
 Eliminates manual memory management bugs like memory leaks or dangling pointers.
 
 ***
 
-\#\# 7️⃣ Exception Handling
+## 7️⃣ Exception Handling
 
-### Definition and Keywords[^6_6][^6_9]
+### Definition and Keywords[^6_6][^6_9]
 An **exception** is an unexpected event during execution that disrupts the normal flow of program instructions.
 
 **Keywords:**
@@ -1316,7 +1296,7 @@ An **exception** is an unexpected event during execution that 
 - `throws`: Declares potential exceptions a method might throw.
 - `finally`: Executes regardless of whether an exception occurs.
 
-### Example – Try‑Catch‑Finally[^6_4]
+### Example – Try‑Catch‑Finally[^6_4]
 
 ```java
 public class ExceptionDemo {
@@ -1339,7 +1319,7 @@ Error: / by zero
 This block always executes.
 ```
 
-### Custom Exception
+### Custom Exception
 
 ```java
 class InsufficientFundsException extends Exception {
@@ -1369,13 +1349,13 @@ class Bank {
 Insufficient balance!
 ```
 
-### Exam Tip
+### Exam Tip
 - Mention the five keywords and their flow.
 - Every `try` needs at least one `catch` or `finally`.
 
 ***
 
-\#\# 📘 Quick Revision Summary
+## 📘 Quick Revision Summary
 
 
 | Concept | Purpose |
@@ -1394,7 +1374,6 @@ Insufficient balance!
 *Next Module → Part 5: Threads, Networking, JDBC, Applets \& Event Handling — featuring lifecycles, synchronization flow, TCP/UDP, database connectivity, and AWT GUI.*
 <span style="display:none">[^6_1][^6_10][^6_2][^6_3][^6_5][^6_7][^6_8]</span>
 
-<div align="center">⁂</div>
 
 [^6_1]: https://www.w3schools.com/java/java_try_catch.asp
 
@@ -1421,15 +1400,10 @@ Insufficient balance!
 
 ---
 
-# next
-
-Here is **Part 5 – Threads, Networking, JDBC, Applets \& Event Handling**, the final section of your exam‑ready **GitHub README‑style** Java notes.
-
-***
 
 # Java Notes – Part 5: Threads, Networking, JDBC, Applets \& Event Handling
 
-\#\# Table of Contents
+## Table of Contents
 1. Multithreading in Java
 2. Thread Class \& Runnable Interface
 3. Thread Lifecycle and Synchronization
@@ -1440,15 +1414,15 @@ Here is **Part 5 – Threads, Networking, JDBC, Applets \& Event
 
 ***
 
-\#\# 1️⃣ Multithreading in Java
+## 1️⃣ Multithreading in Java
 
-### Definition
+### Definition
 Multithreading allows concurrent execution of multiple parts (threads) of a program to maximize CPU efficiency and performance.
 
-### Real‑life Analogy
+### Real‑life Analogy
 Think of an ATM center with many machines. Each machine is a thread serving different users simultaneously. All access the same central database.
 
-### Thread Creation Methods
+### Thread Creation Methods
 **(1) By extending `Thread` class**
 
 ```java
@@ -1491,15 +1465,15 @@ Improves program responsiveness and handles multiple tasks (e.g.,�
 
 ***
 
-\#\# 2️⃣ Thread Lifecycle and Synchronization
+## 2️⃣ Thread Lifecycle and Synchronization
 
-### Thread States
+### Thread States
 
 ```
 NEW → RUNNABLE → RUNNING → BLOCKED/WAITING → TERMINATED
 ```
 
-### Synchronization (Prevent Race Conditions)
+### Synchronization (Prevent Race Conditions)
 
 ```java
 class Account {
@@ -1532,21 +1506,21 @@ Remaining balance: 300
 Insufficient funds!
 ```
 
-### Why Needed
+### Why Needed
 Ensures data consistency when multiple threads access shared resources.
 
 ***
 
-\#\# 3️⃣ Networking Basics (TCP/UDP)
+## 3️⃣ Networking Basics (TCP/UDP)
 
-### Definition and Packages
+### Definition and Packages
 Networking in Java enables communication between devices using classes in `java.net`.
 
 **Core Classes**
 - `Socket` and `ServerSocket` – for TCP
 - `DatagramSocket` and `DatagramPacket` – for UDP
 
-### Example – Simple TCP Communication
+### Example – Simple TCP Communication
 
 **Server.java**
 
@@ -1586,30 +1560,30 @@ public class Client {
 Client: Hello Server!
 ```
 
-### Why Needed
+### Why Needed
 Used in chat applications, banking services, IoT devices, and client‑server systems.
 
 ***
 
-\#\# 4️⃣ JDBC (Java Database Connectivity)
+## 4️⃣ JDBC (Java Database Connectivity)
 
-### Definition 
+### Definition 
 A Java API to connect and execute queries with databases (e.g., MySQL or Oracle).
 
-### JDBC Workflow ASCII Diagram [similar to SQL flow]
+### JDBC Workflow ASCII Diagram [similar to SQL flow]
 
 ```
 Application → DriverManager → Connection → Statement → ResultSet
 ```
 
-### Five Core Steps
+### Five Core Steps
 1. **Load Driver**
 2. **Establish Connection**
 3. **Create Statement**
 4. **Execute Query**
 5. **Close Connection**
 
-### Example (with MySQL)
+### Example (with MySQL)
 
 ```java
 import java.sql.*;
@@ -1639,23 +1613,23 @@ public class JDBCExample {
 102 Alice
 ```
 
-### Why Needed
+### Why Needed
 Links Java apps to backend databases for storing user data, transactions, payments, etc.
 
 ***
 
-\#\# 5️⃣ Applets and GUI (AWT)
+## 5️⃣ Applets and GUI (AWT)
 
-### Definition
+### Definition
 Applets are small Java programs that run within a browser or AppViewer and use the Abstract Window Toolkit (AWT) for GUI components like buttons and labels.
 
-### Applet Lifecycle
+### Applet Lifecycle
 
 ```
 init() → start() → paint() → stop() → destroy()
 ```
 
-### Example (Applet)
+### Example (Applet)
 
 ```java
 import java.applet.*;
@@ -1680,14 +1654,14 @@ Paint method is like `main()` for applets.
 
 ***
 
-\#\# 6️⃣ Event Handling and Adapter Classes
+## 6️⃣ Event Handling and Adapter Classes
 
-### Event Handling Model (Delegation Model)
+### Event Handling Model (Delegation Model)
 1. Event Source (button, textfield)
 2. Event Listener (object handling action)
 3. Event Object (carries details)
 
-### Example – ActionListener
+### Example – ActionListener
 
 ```java
 import java.awt.*;
@@ -1727,13 +1701,13 @@ public class ATMGUI extends Frame implements ActionListener {
 GUI window with button -> clicking updates balance
 ```
 
-### Adapter Classes
+### Adapter Classes
 Used to avoid implementing all methods of listener interfaces.
 E.g., `MouseAdapter`, `KeyAdapter`.
 
 ***
 
-\#\# 📘 Quick Revision Summary
+## 📘 Quick Revision Summary
 
 
 | Concept | Purpose |
